@@ -23,9 +23,12 @@ header {
   float: left;
 }
 
+.img {
+  background: #1dcd79;
+}
+
 .img:nth-child(-n + 3),
 .img:nth-child(n + 7):nth-child(-n + 9) {
-  background: #1dcd79;
   margin-right: 21px;
   height: 320px;
   width: 231px;
@@ -34,7 +37,6 @@ header {
 
 .img:nth-child(n + 4):nth-child(-n + 6),
 .img:nth-child(n + 10):nth-child(-n + 12) {
-  background: #1dcd79;
   margin-top: 5px;
   margin-bottom: 2%;
   margin-right: 21px;
