@@ -9,8 +9,16 @@ header {
 }
 
 .hero-banner {
+  position: relative;
+  display: flex;
   height: 420px;
   background: #315fa4;
+}
+
+.hero-heading {
+  position: relative;
+  top: 310px;
+  left: 25px;
 }
 
 .cta {
@@ -18,27 +26,56 @@ header {
   height: 220px;
   width: 428px;
   background: #ca1dcd;
-  display: block;
+  display: flex;
+  position: relative;
+}
+
+.cta1-heading {
+  position: relative;
+  margin: auto;
+  display: flex;
 }
 
 .cta:nth-child(3) {
   margin-right: 0;
 }
 
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 .footer {
+  position: relative;
   height: 172px;
+  max-width: 428px;
+  padding: 15px;
+  padding-top: 10px;
   background: #c01887;
 }
 
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.foot-second {
+  display: none;
+}
+
 @media screen and (min-width: 767px) {
+  header {
+    width: 100%;
+  }
+
   .inner {
     max-width: 987px;
+    display: flex;
+  }
+
+  .hero-banner {
+    width: 100%;
   }
 
   .cta {
@@ -46,6 +83,23 @@ header {
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    float: left;
+  }
+
+  .footer {
+    padding: 0;
+    display: flex;
+  }
+
+  .footer-background {
+    max-width: 100%;
+    background: #c01887;
+  }
+
+  .foot-second {
+    display: inline-block;
+  }
+
+  .footer ul li {
+    margin-right: 100px;
   }
 }
