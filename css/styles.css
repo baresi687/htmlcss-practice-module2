@@ -1,10 +1,13 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
 .inner {
   max-width: 428px;
   margin: 0 auto;
 }
 header {
   height: 48px;
-  background-color: #76e4eb;
+  background-color: #fff;
   border: 2px solid orange;
 }
 
@@ -48,16 +51,32 @@ header {
 }
 
 .hero-banner {
+  background-image: url("../img/hero-banner.png");
+  background-color: brown;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  display: flex;
+  display: block;
   height: 420px;
-  background: #315fa4;
+  padding: 1px;
 }
 
 .hero-heading {
+  color: white;
   position: relative;
-  top: 310px;
-  left: 25px;
+  top: 250px;
+
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.5em;
 }
 
 .cta {
@@ -66,17 +85,35 @@ header {
   width: 428px;
   background: #ca1dcd;
   display: flex;
+  align-items: center;
   position: relative;
-}
-
-.cta1-heading {
-  position: relative;
-  margin: auto;
-  display: flex;
 }
 
 .cta:nth-child(3) {
   margin-right: 0;
+}
+
+.cta:nth-child(1) {
+  background-image: url("../img/cta1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cta:nth-child(2) {
+  background-image: url("../img/cta2.png");
+}
+
+.cta:nth-child(3) {
+  background-image: url("../img/cta3.png");
+}
+
+.cta1-heading {
+  color: white;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
 }
 
 /* .clearfix::after {
@@ -91,7 +128,7 @@ header {
   max-width: 428px;
   padding: 15px;
   padding-top: 10px;
-  background: #c01887;
+  background: #111;
 }
 
 .footer ul {
@@ -101,6 +138,10 @@ header {
 
 .foot-second {
   display: none;
+}
+
+.foot-first {
+  color: white;
 }
 
 @media screen and (min-width: 767px) {
@@ -145,6 +186,14 @@ header {
 
   .hero-banner {
     width: 100%;
+    background-size: 80%;
+    background-position: inherit;
+    background-repeat: repeat;
+  }
+
+  .hero-heading {
+    text-align: inherit;
+    margin-left: 40px;
   }
 
   .cta {
@@ -152,6 +201,8 @@ header {
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
   }
 
   .footer {
@@ -161,11 +212,17 @@ header {
 
   .footer-background {
     max-width: 100%;
-    background: #c01887;
+    background: #111;
   }
 
   .foot-second {
     display: inline-block;
+    margin: 0;
+    color: white;
+  }
+
+  .footer h4 {
+    margin: 2px;
   }
 
   .footer ul li {
